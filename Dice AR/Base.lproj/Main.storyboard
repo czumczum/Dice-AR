@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--ARDicy-->
         <scene sceneID="tXr-a1-R10">
             <objects>
                 <viewController id="BV1-FR-VrT" customClass="ViewController" customModule="Dice_AR" customModuleProvider="target" sceneMemberID="viewController">
@@ -17,7 +17,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     </arscnView>
-                    <navigationItem key="navigationItem" id="sgp-aL-Zsj">
+                    <navigationItem key="navigationItem" title="ARDicy" prompt="Name" id="sgp-aL-Zsj">
+                        <barButtonItem key="leftBarButtonItem" systemItem="stop" id="v1W-Tv-pgJ">
+                            <connections>
+                                <action selector="deleteButtonClicked:" destination="BV1-FR-VrT" id="R6f-cp-ruH"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Roll" image="001-dice-1" largeContentSizeImage="001-dice-1" id="DV2-Wp-f1C">
                             <connections>
                                 <action selector="rollButtonClicked:" destination="BV1-FR-VrT" id="D1Q-AG-yni"/>
